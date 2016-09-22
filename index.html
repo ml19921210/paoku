@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>游戏</title>
+    <style>
+        body,html{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        canvas{
+            background: url("images/bg.png") repeat-x center bottom;
+            background-size: cover;
+        }
+        .start-box{
+            width: 300px;
+            height: 200px;
+            background: #9e747e;
+            position: fixed;
+            top:0px;right: 0;
+            left: 0px;bottom: 0;
+            margin: auto;
+            z-index: 999;
+            border-radius: 20px;
+        }
+        .start-box .start-0{
+            display: block;
+            width: 90%;
+            margin-top: 10px;margin-left: auto;margin-right: auto;line-height: 2em;
+        }
+        .start-box .start{
+            display: block;
+            background: #4d4d4d;
+            height: 40px;width: 90px;
+            border-radius: 10px;
+            border:2px solid #985f0d;text-align: center;
+            line-height: 40px;
+            color: #d58512;
+            margin-left: 170px;
+            cursor: pointer;
+        }
+        .end-box{
+            width: 300px;
+            height: 200px;
+            background: #9e747e;
+            position: fixed;
+            top:0px;right: 0;
+            left: 0px;bottom: 0;
+            margin: auto;
+            z-index: 999;
+            border-radius: 20px;
+            display: none;
+        }
+        .end-box .end-0{
+            display: block;
+            width: 90%;
+            margin-top: 10px;margin-left: auto;margin-right: auto;line-height: 1.9em;text-align: center;
+        }
+        .end-box .end{
+            display: block;
+            background: #4d4d4d;
+            height: 40px;width: 90px;
+            border-radius: 10px;
+            border:2px solid #985f0d;text-align: center;
+            line-height: 40px;
+            color: #d58512;
+            margin-left: 170px;
+            margin-top: 0px;
+            cursor: pointer;
+        }
+        .gogo{
+            position: fixed;
+            top:50px;
+            right: 50px;
+            z-index: 999;
+            color: #ffffff;
+            font-size: 40px;
+        }r
+    </style>
+</head>
+<body>
+<canvas>
+    您的浏览器不支持canvas
+</canvas>
+<div class="start-box">
+    <span class="start-0">
+        这是一个简单的跑酷游戏,玩家化身跑酷超级英雄，在陆地跳过障碍，急速奔行。
+    </span>
+    <span class="start">进入游戏</span>
+</div>
+<div class="end-box">
+    <span class="end-0" style="font-size: 24px;color: #4d4d4d;font-weight: bold;">
+        很遗憾！您仅仅跑了<span class="juli" style="color: #eb9316"></span>，再接再厉，下次一定会突破自己。
+    </span>
+    <span class="end">重新开始</span>
+</div>
+<div class="gogo"><span>0m</span>
+</div>
+
+<img src="images/1.png" alt="" class="jump" hidden>
+<img src="images/2.png" alt="" class="run" hidden>
+<img src="images/3.png" alt="" class="run" hidden>
+<img src="images/4.png" alt="" class="run" hidden>
+<img src="images/5.png" alt="" class="run" hidden>
+<img src="images/6.png" alt="" class="run" hidden>
+<img src="images/7.png" alt="" class="run" hidden>
+<img src="images/8.png" alt="" class="run" hidden>
+
+<img src="images/9.png" alt="" class="run" hidden>
+<img src="images/11.png" alt="" class="hind" hidden>
+<img src="images/22.png" alt="" class="hind" hidden>
+<img src="images/33.png" alt="" class="hind" hidden>
+<img src="images/44.png" alt="" class="hind" hidden>
+<img src="images/55.png" alt="" class="hind" hidden>
+<img src="images/66.png" alt="" class="hind" hidden>
+<img src="images/77.png" alt="" class="hind" hidden>
+<img src="images/88.png" alt="" class="hind" hidden>
+<img src="images/99.png" alt="" class="hind" hidden>
+<audio src="123.mp3"></audio>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/game.js"></script>
+<script src="js/run.js"></script>
+<script src="js/hitPix.js"></script>
+
+</html>
